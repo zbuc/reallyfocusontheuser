@@ -11,10 +11,6 @@ var anchor = document.getElementsByTagName('script')[0];
 if (!anchor) { return; }
 
 var link = document.createElement('link');
-link.rel = 'stylesheet';
-link.type = 'text/css';
-link.href = '//focusontheuser.org/dontbeevil/style.css?3';
-anchor.parentNode.insertBefore(link, anchor);
 
 var script = document.createElement('script');
 script.src = '//ajax.googleapis.com/ajax/libs/mootools/1.4.1/mootools-yui-compressed.js';

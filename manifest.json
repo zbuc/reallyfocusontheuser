@@ -10,9 +10,9 @@
   "content_scripts" : [
     {
       "matches" : ["*://www.google.com/search*"],
-      "js" : [
-              "mootools-yui-compressed.js",
+      "js" : ["mootools-yui-compressed.js",
               "dontbeevil.js"],
+      "css": ["style.css"],
       "run_at" : "document_idle" 
     }
   ]
