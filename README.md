@@ -13,3 +13,5 @@ The extension can be found in the [Chrome Web Store](https://chrome.google.com/w
 ##Credits
 
 The script itself was written by the people who run [Focus on the User](http://www.focusontheuser.org).
+
+“User” symbol by Bernard Huang, from thenounproject.com collection.
