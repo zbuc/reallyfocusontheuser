@@ -48,7 +48,6 @@ function main() {
 function updatePage() {
   updateTypeahead();
   updateRelatedBox();
-  updateResultStats();
   updateContentLinks();
   updateRelatedLinks();
 }
@@ -138,29 +137,6 @@ function updateRelatedBox() {
   if (fieldset) {
     var legend = fieldset.getFirst('legend');
     legend && legend.set('text', 'People and Pages from the Social Web');
-  }
-}
-
-// Show a little blurb with a link in the result stats area. This also needs to
-// be updated along with every query.
-function updateResultStats() {
-  var stats = $$('#appbar :contains("seconds")').pop();
-  if (stats) {
-    // Probably only need to do this once, but it doesn't hurt.
-    stats.setStyle('overflow', 'visible');
-    stats.getParent('div').setStyle('overflow', 'visible');
-    stats.adopt([
-      new Element('span').adopt([
-        document.createTextNode('\xb7 '),
-        new Element('span', {'class': 'dbe_stats'}).adopt([
-          document.createTextNode('results improved by '),
-          new Element('a', {
-            href: 'http://www.focusontheuser.org',
-            text: 'FocusOnTheUser.org'
-          })
-        ])
-      ])
-    ]);
   }
 }
 
